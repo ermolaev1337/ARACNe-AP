@@ -140,7 +140,12 @@ docker-compose build
 ```
 docker-compose up
 ```
+
+Then run the examples from the inside of the arcane container
 ```
 docker exec -ti arcane bash
 ```
-Then run the examples
+Then copy the outputFolder to the host system
+```
+docker cp arcane:app/outputFolder ./outputFolder
+```
