@@ -2,5 +2,4 @@ services:
   arcane:
     container_name: arcane
     build: .
-    image: openjdk:11
     tty: true

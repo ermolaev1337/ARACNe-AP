@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y ant
 
 WORKDIR /app
-COPY . /app
+COPY ./app /app
 RUN ant main
 
 ENTRYPOINT ["bash"]
